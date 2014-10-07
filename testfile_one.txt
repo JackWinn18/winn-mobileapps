@@ -1,3 +1,5 @@
 Hello I am Jack Winn.
 
 This is a test file that was created online.
+
+I am practicing editing file with Git and GitHub
