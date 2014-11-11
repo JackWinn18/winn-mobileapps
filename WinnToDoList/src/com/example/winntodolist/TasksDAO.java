@@ -69,6 +69,28 @@ public class TasksDAO {
 		database.delete(TasksSQLiteHelper.TABLE_TASKS, TasksSQLiteHelper.COLUMN_ID + " = " + id, null);
 	}
 	
+	public void editTask(Task t) {
+		ContentValues values = new ContentValues();
+		int id = t.getId();
+		
+		int priority = 0;
+		if (t.getPriority()) {
+			priority = 1;
+		}
+		
+		int done = 0;
+		if (t.getCompleted()) {
+			done = 1;
+		}
+		
+		values.put(TasksSQLiteHelper.COLUMN_PRIORITY, priority);
+		values.put(TasksSQLiteHelper.COLUMN_DATE, t.getDate());
+		values.put(TasksSQLiteHelper.COLUMN_TASK, t.getTaskDetails());
+		values.put(TasksSQLiteHelper.COLUMN_COMPLETED, done);
+		
+		database.update(TasksSQLiteHelper.TABLE_TASKS, values, TasksSQLiteHelper.COLUMN_ID + " = " + id, null);
+	}
+	
 	public List<Task> getAllTasks() {
 		List<Task> taskList = new ArrayList<Task>(0);
 		
