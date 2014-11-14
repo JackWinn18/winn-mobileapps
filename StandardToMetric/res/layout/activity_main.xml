@@ -1,0 +1,151 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.standardtometric.MainActivity" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textMiles"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="Miles" />
+
+        <TextView
+            android:id="@+id/textKilometers"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Kilometers" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editTextM"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/editTextK"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/buttonConvert1"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick = "buttonConvert1Clicked"
+            android:text="Convert" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textGallons"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Gallons" />
+
+        <TextView
+            android:id="@+id/textLiters"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Liters" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editTextG"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/editTextL"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/buttonConvert2"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick = "buttonConvert2Clicked"
+            android:text="Convert" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textInches"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Inches" />
+
+        <TextView
+            android:id="@+id/textCentimeters"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Centimeters" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/editTextI"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" />
+
+        <EditText
+            android:id="@+id/editTextC"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/buttonConvert3"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:onClick = "buttonConvert3Clicked"
+            android:text="Convert" />
+
+    </TableRow>
+
+</LinearLayout>
